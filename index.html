@@ -118,7 +118,7 @@
           class="flex flex-col mt-16 mb-24 items-center md:items-start text-xl text-center md:text-left"
         >
           <div
-            class="font-bold text-5xl mb-16 max-w-md md:ml-8 md:mb-4 text-[#8f47ca]"
+            class="font-semibold text-5xl mb-16 max-w-md md:ml-8 md:mb-4 text-blue-600"
           >
             It's very helpful for operating system
           </div>
@@ -159,9 +159,11 @@
     <!-- Section Benefits -->
     <section id="benefits" class="py-16 md:py-24">
       <!-- Benefits Container -->
-      <div class="container text-center mx-auto max-w-7xl px-4 space-y-32">
+      <div
+        class="container text-center mx-auto max-w-7xl px-4 space-y-32 md:space-y-16"
+      >
         <!-- Header Container -->
-        <div class="mx-4 mb-10 md:mx-auto">
+        <div class="mx-4 md:mx-auto">
           <h2
             class="mx-auto max-w-2xl text-center text-3xl font-bold mt-20 md:text-4xl"
           >
@@ -169,7 +171,7 @@
           </h2>
         </div>
         <!-- Cards Container -->
-        <div class="mx-16 flex flex-col gap-4 md:mx-auto md:flex-row">
+        <div class="mx-4 flex flex-col gap-6 md:mx-auto md:flex-row md:gap-4">
           <!-- Card 1 -->
           <div
             class="w-full p-8 space-y-6 bg-white font-poppins rounded-md shadow-xl md:flex-1 hover:-translate-y-6 duration-300"
@@ -252,5 +254,81 @@
         </div>
       </div>
     </section>
+
+    <!-- Section Pricing -->
+    <seciotn id="pricing" class="py-16 md:py-24">
+      <!-- Pricing Cotnianer -->
+      <div class="container text-center mt-20 max-w-7xl mx-auto mb-14">
+        <!-- Text -->
+        <div class="leading-10 font-poppins text-center items-center mb-12">
+          <h3 class="text-3xl mx-auto max-w-2xl font-semibold md:text-4xl mb-2">
+            Choose your best pricing plan
+          </h3>
+          <div class="flex justify-center space-x-2">
+            <p>Added for Monthly</p>
+
+            <div
+              class="h-10 flex items-center cursor-pointer justify-center rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1024 1024"
+                class="w-12 h-12"
+              >
+                <path
+                  fill="#2563af"
+                  d="M330 257.1a254.9 254.9 0 0 0 0 509.8h364a254.9 254.9 0 0 0 0-509.8zm0-72.8h364a327.7 327.7 0 1 1 0 655.4H330a327.7 327.7 0 1 1 0-655.4"
+                />
+                <path
+                  fill="#2563eb"
+                  d="M330 621.2a109.2 109.2 0 1 0 0-218.4a109.2 109.2 0 0 0 0 218.4"
+                />
+              </svg>
+            </div>
+
+            <p>Yearly</p>
+          </div>
+        </div>
+
+        <!-- Pricing Card Contianer -->
+        <div class="flex flex-col gap-6 mx-4 md:flex-row md:spacey-0 mt-20">
+          <!-- Card 1 -->
+          <div
+            class="w-full md:w-1/3 bg-gray-200 p-12 space-y-12 shadow-lg border"
+          >
+            <div class="w-full space-y-5">
+              <h5 class="text-xltext-gray-500">Start-up</h5>
+              <svg
+                width="100%"
+                height="16"
+                viewBox="0 0 300 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 8 H292 M8 8 L15 2 M8 8 L15 14 M292 8 L285 2 M292 8 L285 14"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <p class="font-bold text-6xl">
+                $10<span class="font-normal text-4xl">/mo</span>
+              </p>
+            </div>
+            <div class="leading-9">
+              <ol class="text-gray-500">
+                <li>Easy Customizable</li>
+                <li>Commercia license</li>
+                <li>Single user license</li>
+                <li>Hotline support 24/7</li>
+              </ol>
+            </div>
+            <button class="bg-blue-200 py-3 px-6 rounded-md text-blue-700">
+              TRY THIS PACKAGES
+            </button>
+          </div>
+        </div>
+      </div>
+    </seciotn>
   </body>
 </html>

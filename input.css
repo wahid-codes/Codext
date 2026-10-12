@@ -24,3 +24,12 @@
   transform: translateY(-10px);
   box-shadow: 0 25px 50px -15px rgba(124, 29, 201, 0.35);
 }
+
+.ficon {
+  transition: filter 0.3s ease;
+}
+
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(94%) saturate(1352%)
+    hue-rotate(199deg) brightness(101%) contrast(101%);
+}

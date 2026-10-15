@@ -1021,6 +1021,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-x-52 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(13rem * var(--tw-space-x-reverse));
+  margin-left: calc(13rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1055,9 +1061,14 @@ video {
   border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
 }
 
-.bg-blue-200 {
+.border-b-blue-900 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(30 58 138 / var(--tw-border-opacity, 1));
+}
+
+.bg-blue-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
 }
 
 .bg-blue-50 {
@@ -1078,6 +1089,11 @@ video {
 .bg-blue-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-200 {
@@ -1168,6 +1184,21 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.py-64 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pl-6 {
@@ -1379,15 +1410,27 @@ video {
   color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-gray-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1536,6 +1579,21 @@ video {
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-left {
